@@ -1,0 +1,88 @@
+/* Selectores */
+
+/* Selector universal */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+/* Selector de etiqueta */
+h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+
+}
+/* Selector compuesto */
+footer a{
+    color: brown;}
+
+/* Selector por id */
+
+#descripcion{
+    font-size: 20px;
+    color: bisque;
+    border: 1px solid black;
+}
+
+/* Selectores de clases */
+
+.parrafo2 {
+    background-color: green;
+}
+
+/* Selector de Atributos */
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Selector hijo */
+
+#menu > li > ul > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 40px; /* Or a different value you prefer */
+}
+
+/* Prioridad */
+
+#saludo h1{
+    background-color: aqua !important; /*Este es mas prioritario*/
+}
+h1{
+    background-color: blueviolet !important;
+}
