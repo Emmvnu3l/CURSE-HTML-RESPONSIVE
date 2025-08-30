@@ -1,0 +1,33 @@
+body{
+    background-color: grey;
+    background-image: url(img/f1.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#caja{
+    border: 2px solid black;
+    background-color: rgb(70, 117, 218);
+    color: white;
+    /* centrar texto */
+    /* si poseo fotos dentro de la linea, con el centrado, estas igual se centran */
+    text-align: center;
+    /* ajustar altula de linea */
+    line-height: 50px;
+}
+
+#parrafo{
+    /* ajustar altura de linea */
+    line-height: 30px;
+    /* poner mayusculas o minusculas UPPERCASE O LOWERCASE */
+    text-transform: uppercase;
+    /* alineado vertical se ajuste */
+    vertical-align: top;
+    /* generación de identado */
+    text-indent: 15px;
+    /* ajustar espacio entre palabras */
+    word-spacing: 10px;
+    /* ajustar espacio entre letras */
+    letter-spacing: 10px;
+}
