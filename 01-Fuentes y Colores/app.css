@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Tasa_explorer_custom;
+    src: url(fonts/Tasa_explorer/static/TASAExplorer-Regular.ttf);
+}
+/* font-style normal o italic */
+h1{
+    font-family: "Roboto Serif", serif;
+    /* italic , cursiva */
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+h3{
+    font-family: Tasa_explorer_custom,"Comics Sans MS";
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+p{
+    font-family: "Roboto Serif", serif;
+    font-size: 18px;
+
+}
