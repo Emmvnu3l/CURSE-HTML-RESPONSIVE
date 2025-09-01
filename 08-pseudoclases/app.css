@@ -1,0 +1,38 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pseudo codigo first child, el cual busca el primer elemento de la lista */
+ul li:first-child{
+    color: red;
+}
+#enlace__cabezera{
+    font-size: 30px;
+}
+/* yo no e visitado en enlace */
+#enlace__cabezera:link{
+    color: red;
+}
+/* enlaces visitados */
+#enlace__cabezera:visited{
+    color: green
+}
+/* hover, active, focus se puede aplicar a cualquier elemento */
+/* cuando paso por encima */
+#enlace__cabezera:hover{
+    color: brown;
+}
+/* cuando yo lo pulse le de un estilo */
+#enlace__cabezera:active{
+    color: pink;
+    font-weight: bold;
+    font-size: 50px;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+/* focus: utilizado para formularios donde al hacer click este elemento puede cambiar sus estilos  */
+input[type="text"]:focus{
+    border: 4px dashed blue;
+}
