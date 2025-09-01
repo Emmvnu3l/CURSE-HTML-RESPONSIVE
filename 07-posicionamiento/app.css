@@ -1,0 +1,138 @@
+
+/* EJERCICIOS */
+/*  1.- Crear un html y enlazarlo 
+    2.- El html debe tener: CONTENEDOR GENERAL, CABECERA, MENU,
+     BARRA LATERAL, SECCION DE CONTENIDO, ELEMENTOS DENTRO DEL CONTENIDO, FOOTER*/
+/* EJERCICIOS CCS */
+/* Todo el contenido debe estar dentro del contenedor general y su ancho debe ser 1200px  */
+/* El header debe ocupar el 100% del ancho y tener texto grande centrado */
+/* El menu debe tener los elementos uno alado del otro */
+/* El contenido principal debe tener un ancho del 70% */
+/* El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas */
+/* La barra lateral debe tener un ancho del 30% */
+/* El footer debe tener un ancho del 100% del div que lo contiene y estar debajo de todo */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenerdor__general{
+    width: 1200px;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #52527a;
+    color: white;
+    text-align: center;
+    /* centrar texto */
+    line-height: 90px;
+}
+#menu {
+    background-color: rgb(167, 167, 167);
+}
+#menu ul li{
+    /* centrar los bloques */
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.clearfix{
+    float: none;
+    clear:both;
+}
+#menu ul li a{
+    padding: 10px;
+    color: white;
+    display: block;
+}
+#menu ul li:hover{
+    
+    background-color: #373755;
+}
+
+#menu ul li a:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+#contenido {
+    width: 69%;
+    float: left;
+}
+
+#lateral{
+    width: 30%;
+    float: left;
+    min-height: 500px;
+    max-height: 600px;
+    text-align: center;
+    /* el texto que se sale, del max height, entonces le agregamos un scroll */
+    overflow-y: scroll;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: red;
+    float: left;
+    margin: 20px;
+}
+
+#contenido h1{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    padding: 5px;
+    color: #444;
+}
+
+#footer {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #444;
+}
+
+.libre {    
+    /* viene por defecto relative */
+    /* absolute puede ocupar la misma posicion que otro elemento, ya que este se puede 
+    sobreponer a otros elementos*/
+    position: absolute;
+    /* z index: indicamos al css que capa esta por encima de la otra*/
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: red;
+}
+
+
+.fija {    
+    /* fixed puede ocupar la misma posicion que otro elemento, ya que este se puede 
+    sobreponer a otros elementos, sin embargo este elemento queda fijo en la pantalla
+    y al realizar scroll este se mantiene*/
+    position: fixed;
+    /* z index: indicamos al css que capa esta por encima de la otra*/
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: green;
+}
